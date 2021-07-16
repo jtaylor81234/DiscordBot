@@ -32,6 +32,10 @@ client.on('message', message => {
         client.commands.get('discord').execute(message, args);
     }
 
+    if(command === 'command'){
+        client.commands.get('command').execute(message, args, Discord);
+    }
+
 });
 
 client.login('ODY1NDIyMzc5ODk4NzY1MzMy.YPDxZg.iTLiYgSDeK10eYqzCp99ksUPqzQ');
